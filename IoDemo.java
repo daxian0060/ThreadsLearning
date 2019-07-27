@@ -20,6 +20,7 @@ public class IoDemo {
 	}
 	
 	/**
+	 * 字节流33
 	 * 字节流22
 	 * @param src
 	 * @param dest
