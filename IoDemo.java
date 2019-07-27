@@ -20,7 +20,7 @@ public class IoDemo {
 	}
 	
 	/**
-	 * 字节流
+	 * 字节流22
 	 * @param src
 	 * @param dest
 	 * @throws IOException
