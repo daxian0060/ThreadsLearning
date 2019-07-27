@@ -1,0 +1,38 @@
+package webproject.thinkinjava;
+
+import java.util.Random;
+
+import org.apache.commons.lang.math.Range;
+
+public class ForEachTest {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		System.out.println(random.nextFloat());
+		System.out.println(random.nextInt());
+		
+		boolean flag = false;
+		outer:
+		for(;;){
+			inner:
+			for(int i = 0;i<10;i++){
+				System.out.println( "i: " + i);
+				if(i == 3){
+					System.out.println( "continue : inner");
+					continue inner;
+				}
+				if(i == 6 ){
+					System.out.println("break : outer");
+					flag = true;
+					break outer;
+				}
+				
+			}
+		if(flag == true){
+			break outer;
+		}
+		}
+		
+		System.out.println((char)10);
+	}
+}
